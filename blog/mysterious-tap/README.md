@@ -33,12 +33,6 @@ thumbnail: tap-scenarios-header.jpg
 
 ## Scenario #2
 
-- tap for dispatching actions in facades
-- tap for triggering stuff for 3rd-party integrations
-
-
-## Scenario #3
-
 - tap for triggering routing in NgRx Effects
   - ignoring the Promise?!
   - theoretical analysis: queues (micro task)
@@ -47,4 +41,12 @@ thumbnail: tap-scenarios-header.jpg
       - can be shown with testing (fakeAsync necessary)
     - including promise follows modelled flow
       - testing: subscribe effect and check location
+
+## Scenario #3
+
+- tap for dispatching actions in facades
+- tap for triggering stuff for 3rd-party integrations
+
+-> write your operators for this
+-> use `rxjs-no-tap` from `rxjs-tslint-rules`
 
